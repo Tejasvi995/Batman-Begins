@@ -11,10 +11,10 @@ var rand;
 var thunderCreatedFrame = 0;
 
 function preload(){
-    thun1 = loadImage("thunderbolt/1.png");
-    thun2 = loadImage("thunderbolt/2.png");
-    thun3 = loadImage("thunderbolt/3.png");
-    thun4 = loadImage("thunderbolt/4.png");
+    thun1 = loadImage("1.png");
+    thun2 = loadImage("2.png");
+    thun3 = loadImage("3.png");
+    thun4 = loadImage("4.png");
 }
 
 function setup(){
@@ -64,26 +64,14 @@ function draw(){
 
       umbrella.display();
 
-      //displaying rain drops
+     
       for(var i = 0; i<maxDrops; i++){
           drops[i].showDrop();
           drops[i].updateY();
           
       }
 
-        /*textFont("Algerian");
-        strokeWeight(4);
-        stroke("white");
-        textSize(45);
-        fill("red");
-        text("Portrait of Bruce, THE BATMAN", 600,200);
-
-        textFont("Freestyle Script");
-        strokeWeight(1);
-        stroke("yellow")
-        textSize(45);
-        fill("white");
-        text("View of a dark rainy night on the streets of Gotham...", 600,250);*/
+        
         
       drawSprites();
 }   
